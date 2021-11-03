@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/CodewarsHistory.dir/Tests.cpp.o CMakeFiles/CodewarsHistory.dir/main.cpp.o -o CodewarsHistory.exe -Wl,--out-implib,libCodewarsHistory.dll.a -Wl,--major-image-version,0,--minor-image-version,0  lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a 
