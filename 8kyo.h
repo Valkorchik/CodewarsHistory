@@ -3,7 +3,7 @@
 //Reversed Strings
 //Complete the solution so that it reverses the string passed into it.
 #include <string>
-using namespace std ;
+using namespace std;
 string reverseString (string str )
 {
     string res_str;
@@ -14,4 +14,4 @@ string reverseString (string str )
     return res_str;
 }
 
-#endif //CODEWARSHISTORY_8KYO_H
+#endif CODEWARSHISTORY_8KYO_H

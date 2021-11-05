@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CodewarsHistory.dir/Tests.cpp.o"
-  "CMakeFiles/CodewarsHistory.dir/main.cpp.o"
   "CodewarsHistory.exe"
   "CodewarsHistory.pdb"
   "libCodewarsHistory.dll.a"

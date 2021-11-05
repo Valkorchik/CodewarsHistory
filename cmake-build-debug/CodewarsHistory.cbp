@@ -334,9 +334,6 @@
 		<Unit filename="/cygdrive/e/Work/GitHub/CodewarsHistory/googletest/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/Work/GitHub/CodewarsHistory/main.cpp">
-			<Option target="CodewarsHistory"/>
-		</Unit>
 		<Unit filename="/cygdrive/e/Work/GitHub/CodewarsHistory/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

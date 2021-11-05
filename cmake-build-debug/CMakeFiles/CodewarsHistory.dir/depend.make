@@ -24,6 +24,3 @@ CMakeFiles/CodewarsHistory.dir/Tests.cpp.o: \
  ../googletest/googletest/include/gtest/internal/gtest-type-util.h \
  ../8kyo.h \
  ../Tests.cpp
-CMakeFiles/CodewarsHistory.dir/main.cpp.o: \
- ../8kyo.h \
- ../main.cpp

@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/e/Work/GitHub/CodewarsHistory/Tests.cpp" "/cygdrive/e/Work/GitHub/CodewarsHistory/cmake-build-debug/CMakeFiles/CodewarsHistory.dir/Tests.cpp.o"
-  "/cygdrive/e/Work/GitHub/CodewarsHistory/main.cpp" "/cygdrive/e/Work/GitHub/CodewarsHistory/cmake-build-debug/CMakeFiles/CodewarsHistory.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
