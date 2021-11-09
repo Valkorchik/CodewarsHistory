@@ -316,6 +316,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/e/Work/GitHub/CodewarsHistory/7kyo.h">
+			<Option target="CodewarsHistory"/>
+		</Unit>
 		<Unit filename="/cygdrive/e/Work/GitHub/CodewarsHistory/8kyo.h">
 			<Option target="CodewarsHistory"/>
 		</Unit>

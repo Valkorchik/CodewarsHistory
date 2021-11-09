@@ -332,6 +332,12 @@ cxxabi.h
 acxx_demangle.h
 -
 
+/cygdrive/e/Work/GitHub/CodewarsHistory/7kyo.h
+vector
+-
+algorithm
+-
+
 /cygdrive/e/Work/GitHub/CodewarsHistory/8kyo.h
 string
 -
@@ -341,4 +347,6 @@ gtest/gtest.h
 -
 8kyo.h
 /cygdrive/e/Work/GitHub/CodewarsHistory/8kyo.h
+7kyo.h
+/cygdrive/e/Work/GitHub/CodewarsHistory/7kyo.h
 

@@ -22,5 +22,6 @@ CMakeFiles/CodewarsHistory.dir/Tests.cpp.o: \
  ../googletest/googletest/include/gtest/internal/gtest-port.h \
  ../googletest/googletest/include/gtest/internal/gtest-string.h \
  ../googletest/googletest/include/gtest/internal/gtest-type-util.h \
+ ../7kyo.h \
  ../8kyo.h \
  ../Tests.cpp
