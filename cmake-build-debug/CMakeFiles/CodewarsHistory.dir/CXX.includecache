@@ -337,9 +337,17 @@ vector
 -
 algorithm
 -
+string
+-
+vector
+-
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/8kyo.h
 string
+-
+vector
+-
+algorithm
 -
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/Tests.cpp

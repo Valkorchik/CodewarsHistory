@@ -19,4 +19,15 @@ int makeNegative(int num)
 {
     return num>0 ? num*(-1) : num;
 }
+//Find the smallest integer in the array
+//Given an array of integers your solution should find the smallest integer.
+#include <vector>
+#include <algorithm>
+using namespace std;
+int findSmallest(vector <int> list)
+{
+    // Your Code is Here ... Hope you Enjoy
+    sort(list.begin(),list.end());
+    return list[0];
+}
 #endif CODEWARSHISTORY_8KYO_H
