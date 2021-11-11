@@ -332,6 +332,8 @@ cxxabi.h
 acxx_demangle.h
 -
 
+/cygdrive/e/Work/GitHub/CodewarsHistory/6kyo.h
+
 /cygdrive/e/Work/GitHub/CodewarsHistory/7kyo.h
 vector
 -
@@ -340,6 +342,8 @@ algorithm
 string
 -
 vector
+-
+cmath
 -
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/8kyo.h
@@ -357,4 +361,6 @@ gtest/gtest.h
 /cygdrive/e/Work/GitHub/CodewarsHistory/8kyo.h
 7kyo.h
 /cygdrive/e/Work/GitHub/CodewarsHistory/7kyo.h
+6kyo.h
+/cygdrive/e/Work/GitHub/CodewarsHistory/6kyo.h
 

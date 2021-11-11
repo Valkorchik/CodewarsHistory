@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "8kyo.h"
 #include "7kyo.h"
+#include "6kyo.h"
 TEST(BasicTests, ReverseStrings) {
     ASSERT_EQ(reverseString("hello"),"olleh" );
     ASSERT_EQ(reverseString("rat"), "tar");
@@ -53,4 +54,11 @@ TEST(BasicTests, EvenOrOdd) {
     ASSERT_EQ(odd_or_even({1023, 1, 2}), "even");
     ASSERT_EQ(odd_or_even({-1023, -1, 3}), "odd");
     ASSERT_EQ(odd_or_even({0, 1, -4}), "odd");
+}
+TEST(BasicTests, NextPerfectSquare)
+{
+    ASSERT_EQ(findNextSquare(625), 676);
+    ASSERT_EQ(findNextSquare(319225), (320356));
+    ASSERT_EQ(findNextSquare(15241383936), (15241630849));
+    ASSERT_EQ(findNextSquare(155), (-1));
 }
