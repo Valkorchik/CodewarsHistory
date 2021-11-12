@@ -62,3 +62,27 @@ TEST(BasicTests, NextPerfectSquare)
     ASSERT_EQ(findNextSquare(15241383936), (15241630849));
     ASSERT_EQ(findNextSquare(155), (-1));
 }
+TEST(BasicTests, SortNumbers)
+{
+    vector<int>numbers1={1,2,3,5,10};
+    vector<int>numbers2={};
+    vector<int>numbers3={2,10,20};
+    vector<int>numbers4={2,10,20};
+    ASSERT_EQ(solution({1,2,3,10,5}), (numbers1));
+    ASSERT_EQ(solution({}), (numbers2));
+    ASSERT_EQ(solution({20,2,10}), (numbers3));
+    ASSERT_EQ(solution({2,20,10}), (numbers4));
+}
+TEST(BasicTests, AnagrammDetector)
+{
+    ASSERT_EQ(isAnagram("foefet", "toffee"), (true));
+    ASSERT_EQ(isAnagram("Buckethead", "DeathCubeK"), true);
+    ASSERT_EQ(isAnagram("Twoo", "WooT"), (true));
+    ASSERT_EQ(isAnagram("dumble", "bumble"), (false));
+    ASSERT_EQ(isAnagram("around", "round"), (false));
+    ASSERT_EQ(isAnagram("ound", "round"), (false));
+    ASSERT_EQ(isAnagram("apple", "pale"), (false));
+    ASSERT_EQ(isAnagram("apple", "appeal"), (false));
+    ASSERT_EQ(isAnagram("", ""), (true));
+
+}

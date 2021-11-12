@@ -39,4 +39,34 @@ long int findNextSquare(long int sq) {
     }
     else return -1;
 }
+//Sort Numbers
+//Finish the solution so that it sorts the passed in array of numbers. If the function passes in an empty array or null/nil value then it should return an empty array.
+#include <vector>
+#include <algorithm>
+using namespace std;
+vector<int> solution(vector<int> nums) {
+    sort(nums.begin(),nums.end());
+    return nums;
+}
+//Anagram Detection
+#include <algorithm>
+#include <string>
+using namespace std;
+bool isAnagram(string test, string original){
+    //your code here
+    if(test.size()==original.size())
+    {
+        for(int i=0;i<test.size();i++)
+        {
+            if(isupper(test[i])) test[i]=tolower(test[i]);
+            if(isupper(original[i])) original[i]=tolower(original[i]);
+        }
+        sort(test.begin(),test.end());
+        sort(original.begin(),original.end());
+        if ((test)== (original)) return true;
+        else return false;
+    }
+    else return false;
+
+}
 #endif
