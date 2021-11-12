@@ -345,16 +345,6 @@ vector
 -
 cmath
 -
-vector
--
-algorithm
--
-algorithm
--
-iostream
--
-string
--
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/8kyo.h
 string
@@ -362,8 +352,6 @@ string
 vector
 -
 algorithm
--
-string
 -
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/Tests.cpp
