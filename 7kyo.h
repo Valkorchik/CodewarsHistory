@@ -69,4 +69,55 @@ bool isAnagram(string test, string original){
     else return false;
 
 }
+<<<<<<< Updated upstream
 #endif
+=======
+//Predict your age!
+//My grandfather always predicted how old people would get, and right before he passed away he revealed his secret!
+//In honor of my grandfather's memory we will write a function using his formula!
+#include <math.h>
+using namespace std;
+int power(int& age)
+{
+    return age*age;
+}
+int predictAge(int age1, int age2, int age3, int age4, int age5, int age6, int age7, int age8)
+{
+    int final;
+    final=power(age1)+power(age2)+power(age3)+power(age4)+power(age5)+power(age6)+power(age7)+power(age8);
+    return sqrt(final)/2;
+}
+//JavaScript Array Filter
+// delete even numbers
+#include <vector>
+using namespace std;
+vector<int> get_even_numbers(vector<int>& arr) {
+    // your code here
+    for(int i=0;i<arr.size();i++)
+    {
+        if (arr[i]%2!=0) arr.erase(arr.begin()+i);
+    }
+    return arr;
+}
+//Sorted? yes? no? how?
+//Complete the method which accepts an array of integers, and returns one of the following:
+//"yes, ascending" - if the numbers in the array are sorted in an ascending order
+//"yes, descending" - if the numbers in the array are sorted in a descending order
+//"no" - otherwise
+#include <vector>
+#include <algorithm>
+using namespace std;
+string is_sorted_and_how(vector<int> array)
+{
+    vector<int>arrayS=array;
+    sort(arrayS.begin(),arrayS.end());
+    vector<int>arrayR=array;
+    sort(arrayR.begin(),arrayR.end());
+    reverse(arrayR.begin(),arrayR.end());
+    if(array==arrayS) return "yes, ascending";
+    if(array==arrayR) return "yes, descending";
+    return "no";
+     // TODO: implementation
+}
+#endif
+>>>>>>> Stashed changes

@@ -345,6 +345,25 @@ vector
 -
 cmath
 -
+<<<<<<< Updated upstream
+=======
+vector
+-
+algorithm
+-
+algorithm
+-
+string
+-
+math.h
+-
+vector
+-
+vector
+-
+algorithm
+-
+>>>>>>> Stashed changes
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/8kyo.h
 string

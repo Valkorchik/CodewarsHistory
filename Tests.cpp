@@ -84,5 +84,35 @@ TEST(BasicTests, AnagrammDetector)
     ASSERT_EQ(isAnagram("apple", "pale"), (false));
     ASSERT_EQ(isAnagram("apple", "appeal"), (false));
     ASSERT_EQ(isAnagram("", ""), (true));
+}
+TEST(BasicTests, PredictAge)
+{
+    ASSERT_EQ(predictAge(65,60,75,55,60,63,64,45), (86));
+}
+TEST(BasicTests, ArrayFilter)
+{
+    vector<int> vec1={2, 4, 6};
+    vector<int> vec2={};
+    vector<int> vec3={};
+    vector<int> vec4={2};
+    vector<int> vec5={2, 4};
+
+    vector<int> vect1={2, 4, 5, 6};
+    vector<int> vect2={};
+    vector<int> vect3={1};
+    vector<int> vect4={1, 2};
+    vector<int> vect5={1, 2, 3, 4};
+
+    ASSERT_EQ(get_even_numbers(vect1),vec1);
+    ASSERT_EQ(get_even_numbers(vect2),vec2);
+    ASSERT_EQ(get_even_numbers(vect3),vec3);
+    ASSERT_EQ(get_even_numbers(vect4),vec4);
+    ASSERT_EQ(get_even_numbers(vect5),vec5);
+}
+TEST(BasicTests, IsSorted)
+{
+    ASSERT_EQ(is_sorted_and_how({1, 2}), ("yes, ascending"));
+    ASSERT_EQ(is_sorted_and_how({15, 7, 3, -8}), ("yes, descending"));
+    ASSERT_EQ(is_sorted_and_how({4, 2, 30}), ("no"));
 
 }
