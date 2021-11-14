@@ -69,9 +69,6 @@ bool isAnagram(string test, string original){
     else return false;
 
 }
-<<<<<<< Updated upstream
-#endif
-=======
 //Predict your age!
 //My grandfather always predicted how old people would get, and right before he passed away he revealed his secret!
 //In honor of my grandfather's memory we will write a function using his formula!
@@ -119,5 +116,64 @@ string is_sorted_and_how(vector<int> array)
     return "no";
      // TODO: implementation
 }
+//Thinkful - String Drills: Repeater
+//Write a function named repeater() that takes two arguments (a string and a number), and returns a new string where the input string is repeated that many times.
+#include <string>
+using namespace std;
+string repeater(string str, int n)
+{
+    string collector;
+    for(int i=0;i<n;i++)
+    {
+        collector+=str;
+    }
+    return collector;
+}
+//Isograms
+//An isogram is a word that has no repeating letters, consecutive or non-consecutive.
+// Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+#include <algorithm>
+using namespace std;
+bool is_isogram(string str) {
+    int counter;
+    for(int i=0;i<str.size();i++)
+    {
+       if(isupper(str[i]))
+       {
+           str[i]= tolower(str[i]);
+       }
+    }
+    for(int i=0;i<str.size();i++)
+    {
+        counter=count(str.begin(),str.end(),str[i]);
+        if(counter>=2) return false;
+    }
+    return true;
+}
+//Get the Middle Character
+//You are going to be given a word. Your job is to return the middle character of the word.
+// If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+using namespace std;
+string get_middle(string input)
+{
+    string filler;
+    unsigned long index;
+    for(int i=0;i<input.size();i++)
+    {
+        if(input.size()%2==0)
+        {
+            index=input.size()/2;
+            filler+=input[index-1];
+            filler+=input[index];
+            return filler;
+        }
+        else {
+            index=((input.size()-1)/2)+1;
+            filler=input[index-1];
+            return filler;
+        }
+    }
+    return "";
+}
 #endif
->>>>>>> Stashed changes
+

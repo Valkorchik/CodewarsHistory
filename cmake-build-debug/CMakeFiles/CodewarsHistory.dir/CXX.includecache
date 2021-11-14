@@ -333,6 +333,8 @@ acxx_demangle.h
 -
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/6kyo.h
+string
+-
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/7kyo.h
 vector
@@ -345,8 +347,6 @@ vector
 -
 cmath
 -
-<<<<<<< Updated upstream
-=======
 vector
 -
 algorithm
@@ -363,7 +363,10 @@ vector
 -
 algorithm
 -
->>>>>>> Stashed changes
+string
+-
+algorithm
+-
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/8kyo.h
 string
@@ -371,6 +374,8 @@ string
 vector
 -
 algorithm
+-
+string
 -
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/Tests.cpp

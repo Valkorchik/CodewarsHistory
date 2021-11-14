@@ -64,6 +64,5 @@ string rps(const string& p1, const string& p2)
         return "Draw!";
     }
 }
-
 #endif
 

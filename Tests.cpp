@@ -116,3 +116,28 @@ TEST(BasicTests, IsSorted)
     ASSERT_EQ(is_sorted_and_how({4, 2, 30}), ("no"));
 
 }
+TEST(BasicTests, Repeater)
+{
+    ASSERT_EQ(repeater("a", 5), ("aaaaa"));
+    ASSERT_EQ(repeater("Na", 16), ("NaNaNaNaNaNaNaNaNaNaNaNaNaNaNaNa"));
+    ASSERT_EQ(repeater("Wub ", 6), ( "Wub Wub Wub Wub Wub Wub "));
+}
+TEST(BasicTests, Isograms)
+{
+    ASSERT_EQ(is_isogram("Dermatoglyphics"), (true));
+    ASSERT_EQ(is_isogram("moose"), (false));
+    ASSERT_EQ(is_isogram("isIsogram"), (false));
+}
+TEST(BasicTests,VowelCode) {
+    ASSERT_EQ(encode("hello"), ("h2ll4"));
+    ASSERT_EQ(encode("How are you today?"), ("H4w 1r2 y45 t4d1y?"));
+    ASSERT_EQ(encode("This is an encoding test."), ("Th3s 3s 1n 2nc4d3ng t2st."));
+    ASSERT_EQ(decode("h2ll4"), ("hello"));
+    ASSERT_EQ(decode("H4w 1r2 y45 t4d1y?"), ("How are you today?"));
+    ASSERT_EQ(decode("Th3s 3s 1n 2nc4d3ng t2st."), ("This is an encoding test."));
+}
+TEST(Basictests, FindMiddle)
+{
+    ASSERT_EQ(get_middle("test"), ("es"));
+    ASSERT_EQ(get_middle("testing"), ("t"));
+}
