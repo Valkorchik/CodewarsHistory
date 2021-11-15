@@ -141,3 +141,32 @@ TEST(Basictests, FindMiddle)
     ASSERT_EQ(get_middle("test"), ("es"));
     ASSERT_EQ(get_middle("testing"), ("t"));
 }
+TEST(BasicTests, CarInfo)
+{
+    ASSERT_EQ(bumps("n"), ("Woohoo!"));
+    ASSERT_EQ(bumps("_nnnnnnn_n__n______nn__nn_nnn"), ("Car Dead"));
+    ASSERT_EQ(bumps("______n___n_"), ("Woohoo!"));
+    ASSERT_EQ(bumps("nnnnnnnnnnnnnnnnnnnnn"), ("Car Dead"));
+}
+TEST(BasicTests, FromLargest)
+{
+    ASSERT_EQ(maxNumber(213), (321));
+    ASSERT_EQ(maxNumber(7389), (9873));
+    ASSERT_EQ(maxNumber(63792), (97632));
+
+    ASSERT_EQ(maxNumber(566797), (977665));
+    ASSERT_EQ(maxNumber(2399783), (9987332));
+    ASSERT_EQ(maxNumber(79797979), (99997777));
+
+    ASSERT_EQ(maxNumber(17693284),(98764321));
+    ASSERT_EQ(maxNumber(17758936), (98776531));
+    ASSERT_EQ(maxNumber(134976658), (987665431));
+}
+TEST(Interesting,WhoLikes)
+{
+    ASSERT_EQ(likes({}), ("no one likes this"));
+    ASSERT_EQ(likes({"Peter"}), ("Peter likes this"));
+    ASSERT_EQ(likes({"Jacob", "Alex"}), ("Jacob and Alex like this"));
+    ASSERT_EQ(likes({"Max", "John", "Mark"}), ("Max, John and Mark like this"));
+    ASSERT_EQ(likes({"Alex", "Jacob", "Mark", "Max"}), ("Alex, Jacob and 2 others like this"));
+}

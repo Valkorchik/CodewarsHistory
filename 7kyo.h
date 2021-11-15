@@ -175,5 +175,33 @@ string get_middle(string input)
     }
     return "";
 }
+//Bumps in the Road
+//Your car is old, it breaks easily. The shock absorbers are gone and you think it can handle about 15 more bumps before it dies totally.
+#include <algorithm>
+using namespace std;
+string bumps(string road){
+    //your code here
+    return count(road.begin(), road.end(), 'n')>15 ? "Car Dead" : "Woohoo!";
+}
+//Form The Largest
+//Given a number , Return _The Maximum number _ could be formed from the digits of the number given .
+#include <string>
+#include <vector>
+using namespace std;
+long long int maxNumber (long long int number)
+{
+    vector<char>vec;
+    string filler;
+    string iter= to_string(number);
+    for(const char& num:iter)
+    {
+        vec.push_back(num);
+    }
+    sort(vec.rbegin(),vec.rend());
+    for(const auto& num:vec)
+    {
+        filler+=num;
+    }
+    return stoi(filler);
+}
 #endif
-

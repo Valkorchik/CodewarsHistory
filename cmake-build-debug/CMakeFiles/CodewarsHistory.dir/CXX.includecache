@@ -367,6 +367,12 @@ string
 -
 algorithm
 -
+algorithm
+-
+string
+-
+vector
+-
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/8kyo.h
 string
