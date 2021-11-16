@@ -170,3 +170,23 @@ TEST(Interesting,WhoLikes)
     ASSERT_EQ(likes({"Max", "John", "Mark"}), ("Max, John and Mark like this"));
     ASSERT_EQ(likes({"Alex", "Jacob", "Mark", "Max"}), ("Alex, Jacob and 2 others like this"));
 }
+TEST(Interesting, DuplicateEncoder)
+{
+    ASSERT_EQ(duplicate_encoder("din"), ("((("));
+    ASSERT_EQ(duplicate_encoder("recede"), ("()()()"));
+    ASSERT_EQ(duplicate_encoder("Success"), (")())())"));
+    ASSERT_EQ(duplicate_encoder("CodeWarrior"), ("()(((())())"));
+    ASSERT_EQ(duplicate_encoder("Supralapsarian"), (")()))()))))()("));
+    ASSERT_EQ(duplicate_encoder("(( @"), ("))(("));
+    ASSERT_EQ(duplicate_encoder(" ( ( )"), (")))))("));
+}
+TEST(Inter, ConterDupl) {
+    ASSERT_EQ(duplicateCount(" "), (0));
+    ASSERT_EQ(duplicateCount(""), (0));
+    ASSERT_EQ(duplicateCount("aabbcde"), (2));
+    ASSERT_EQ(duplicateCount("aabBcde"), (2));
+    ASSERT_EQ(duplicateCount("Indivisibility"), (1));
+    ASSERT_EQ(duplicateCount("Indivisibilities"), (2));
+    ASSERT_EQ(duplicateCount("ABBA"), (2));
+
+}
