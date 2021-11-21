@@ -96,5 +96,64 @@ size_t duplicateCount(const char* in)
     }
     return collector.size();
 }
-
+//Count characters in your string
+//The main idea is to count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
+//What if the string is empty? Then the result should be empty object literal, {}
+#include <map>
+#include <string>
+#include <set>
+#include <algorithm>
+using namespace std;
+map<char, unsigned> count(const string& string) {
+    set<char>uniquer;
+    map<char,unsigned> dict;
+    unsigned number;
+    for(auto const& word:string)
+    {
+        uniquer.insert(word);
+    }
+    for(char const& word:uniquer)
+    {
+        number=count(string.begin(),string.end(),word);
+        dict.insert(make_pair(word,number));
+    }
+    return dict;
+}
+//Number Format
+//Format any integer provided into a string with "," (commas) in the correct places.
+#include<string>
+using namespace std;
+string numberFormat(long long n) {
+    auto s = to_string(n);
+    int filler;
+    int a = s.length() - 3;
+    while (a > 0) {
+        if (s[a-1]=='-')
+        {
+            filler=1;
+        }
+        else s.insert(a, ",");
+        a -= 3;
+        }
+    return s;
+}
+//All Star Code Challenge #15
+//The scroller works by replacing the current text string with a similar text string, but with the first letter shifted to the end; this simulates movement.
+//You're father is far too busy with the business to worry about such details, so, naturally, he's making you come up with the text strings.
+//Create a function named rotate() that accepts a string argument and returns an array of strings with each letter from the input string being rotated to the end.
+#include <string>
+#include <vector>
+using namespace std;
+vector<string> rotate(const string& s) {
+    // your code here
+    string rotated=s;
+    vector<string> collector;
+    for(int i=0;i<s.size();i++)
+    {
+        rotated.erase(0,1);
+        rotated+= s[i];
+        collector.push_back(rotated);
+    }
+    return collector;
+}
 #endif

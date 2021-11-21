@@ -345,6 +345,20 @@ set
 -
 algorithm
 -
+map
+-
+string
+-
+set
+-
+algorithm
+-
+string
+-
+string
+-
+vector
+-
 
 /cygdrive/e/Work/GitHub/CodewarsHistory/7kyo.h
 vector

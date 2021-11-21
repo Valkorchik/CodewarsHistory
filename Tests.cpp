@@ -188,5 +188,21 @@ TEST(Inter, ConterDupl) {
     ASSERT_EQ(duplicateCount("Indivisibility"), (1));
     ASSERT_EQ(duplicateCount("Indivisibilities"), (2));
     ASSERT_EQ(duplicateCount("ABBA"), (2));
+}
+TEST(Inter, AllStar)
+{
+    ASSERT_EQ(rotate("hello"),(vector<string>{"elloh", "llohe", "lohel", "ohell", "hello"}));
+    ASSERT_EQ(rotate(" "),(std::vector<std::string>{" "}));
+    ASSERT_EQ(rotate(""),(std::vector<std::string>{}));
+}
+TEST(Inter, CountChars)
+{
+    ASSERT_EQ(numberFormat(100000), ("100,000"));
+    ASSERT_EQ(numberFormat(-420902), ("-420,902"));
+    ASSERT_EQ(numberFormat(5678545), ("5,678,545"));
+    ASSERT_EQ(numberFormat(3), ("3"));
+    ASSERT_EQ(numberFormat(-3), ("-3"));
+
+
 
 }
